@@ -1,7 +1,21 @@
 # Assignment - difficulty level: *
 
-Write a function `sign(n)` that
+Translate this JavaScript code into Python.
 
-* returns `1` if `n` is positive;
-* returns `0` if `n` is zero;
-* returns `-1` if `n` is negative.
+```javascript
+function sign(n)
+{
+    if ( n > 0 )
+    {
+        return 1;
+    }
+    else if ( n < 0 )
+    {
+        return -1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+```

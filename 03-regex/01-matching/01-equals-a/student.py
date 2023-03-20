@@ -1,2 +1,9 @@
 # Write your code here
-qd, gnsddgnlsndg
+import re
+
+
+def equals_a(string):
+    if re.fullmatch("a", string):
+        return True
+    else:
+        False

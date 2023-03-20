@@ -15,12 +15,4 @@ def is_valid_password(string):
         r'(.)(.*\1){3}'
     ]
 
-    for regex in positive_regexes:
-        if not re.search(regex, string):
-            return False
-
-    for regex in negative_regexes:
-        if re.search(regex, string):
-            return False
-
-    return True
+    return all(re.search(regex, string) for regex in positive_regexes) and not any(re.search(regex, string) for regex in negative_regexes)

@@ -1,1 +1,9 @@
 # Write your code here
+import re
+
+
+def is_valid_time(string):
+    if re.fullmatch('[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]{3})?', string):
+        return True
+    else:
+        return False

@@ -8,10 +8,11 @@ def remove_duplicates(xs):
     return result
 
 
-# Slow solution
 def remove_duplicates_using_list(xs):
+    found = []
     result = []
     for x in xs:
-        if x not in result:
+        if x not in found:
             result.append(x)
+            found.append(x)
     return result
